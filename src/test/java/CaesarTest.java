@@ -22,12 +22,12 @@ public class CaesarTest {
     public void encrypt_returnEncryptedText_String(){
         Caesar testCipher3 = new Caesar("tom", 2);
         testCipher3.encrypt("tom", 2);
-        assertEquals("vqo", testCipher3.encrypt("tom", 2));
+        assertEquals("lquj", testCipher3.encrypt("josh", 2));
     }
 
     @Test
     public void decrypt_returnDecryptedText_String(){
-        Caesar testCipher4 = new Caesar("rjo", 2);
+        Caesar testCipher4 = new Caesar("rko", 2);
         testCipher4.decrypt("rko", 2);
         assertEquals("josh", testCipher4.decrypt("lquj",2));
     }
