@@ -6,8 +6,8 @@ public class CaesarTest {
     @Test
     public void runCipher_returnStringPlainText_String(){
         Caesar testCipher = new Caesar("tom",2);
-        testCipher.getPlainText();
-        assertEquals("tom", testCipher.getPlainText());
+        testCipher.getPlainWord();
+        assertEquals("tom", testCipher.getPlainWord());
     }
 
     @Test
