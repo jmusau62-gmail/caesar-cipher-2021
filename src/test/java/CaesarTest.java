@@ -12,7 +12,7 @@ public class CaesarTest {
 
     @Test
     public void runCipher_returnIntShift_Integer(){
-        Caesar testCipher2 = new Caesar("nevamindit", 2);
+        Caesar testCipher2 = new Caesar("wooobababa", 2);
         testCipher2.getShift();
         assertEquals(2, testCipher2.getShift());
 
@@ -20,8 +20,8 @@ public class CaesarTest {
 
     @Test
     public void encrypt_returnEncryptedText_String(){
-        Caesar testCipher3 = new Caesar("tom", 2);
-        testCipher3.encrypt("tom", 2);
+        Caesar testCipher3 = new Caesar("josh", 2);
+        testCipher3.encrypt("josh", 2);
         assertEquals("lquj", testCipher3.encrypt("josh", 2));
     }
 
