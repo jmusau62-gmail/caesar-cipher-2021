@@ -5,14 +5,14 @@ public class CaesarTest {
 
     @Test
     public void runCipher_returnStringPlainText_String(){
-        Caesar testCipher = new Caesar("tom",2);
+        Caesar testCipher = new Caesar("josh",2);
         testCipher.getPlainWord();
-        assertEquals("tom", testCipher.getPlainWord());
+        assertEquals("josh", testCipher.getPlainWord());
     }
 
     @Test
     public void runCipher_returnIntShift_Integer(){
-        Caesar testCipher2 = new Caesar("nebuchadnezzer", 2);
+        Caesar testCipher2 = new Caesar("nevamindit", 2);
         testCipher2.getShift();
         assertEquals(2, testCipher2.getShift());
 
@@ -27,9 +27,9 @@ public class CaesarTest {
 
     @Test
     public void decrypt_returnDecryptedText_String(){
-        Caesar testCipher4 = new Caesar("vqo", 2);
-        testCipher4.decrypt("vqo", 2);
-        assertEquals("tom", testCipher4.decrypt("vqo",2));
+        Caesar testCipher4 = new Caesar("rjo", 2);
+        testCipher4.decrypt("rko", 2);
+        assertEquals("josh", testCipher4.decrypt("lquj",2));
     }
 
 }
